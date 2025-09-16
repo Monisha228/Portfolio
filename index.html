@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="images (1).png">
+<link rel="stylesheet" href="style.css">
+
+
+  <title>Monisha | Portfolio</title>
+  
+  
+</head>
+<body class="light"> <!-- default: light -->
+  <!-- HEADER -->
+<header class="container" role="banner">
+  <div style="display:flex;align-items:center;gap:14px">
+    <div class="brand">&lt;Monisha /&gt;</div>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button class="theme-btn" id="theme-toggle" aria-pressed="false">Dark</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      ☰
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="intro">Hi, I'm <span class="name">Monisha</span><br><span style="font-weight:600;font-size:1.1rem;color:var(--muted)">Web Developer & Designer</span></div>
+        <p class="sub lead">Devoted web creator, weaving dynamic online experiences with seamless code and thoughtful design. I build responsive sites, small backend services and beautiful UI.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn outline">Hire / Contact</a>
+        </div>
+      </div>
+
+      <!-- small card on right -->
+      <div class="card hero-card" style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:12px;align-items:center">
+            
+          <div style="width:64px;height:64px;border-radius:12px;"><img src="images (1).png" 
+            alt="Monisha Profile" 
+            style="width:64px;height:64px;border-radius:12px;object-fit:cover;"></div>
+          <div>
+            <div style="font-weight:800">Monisha</div>
+            <div style="color:var(--muted);font-size:.95rem">B.Sc Computer Science</div>
+          </div>
+        </div>
+        <div style="color:var(--muted);font-size:.95rem">Available for freelance & full-time roles. Based in India.</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I graduated with a degree in <b>B.Sc Computer Science</b>. My journey began in college and has grown into a strong interest in both 
+          <span style="color:var(--accent);font-weight:600">front-end</span> and 
+          <span style="color:var(--accent);font-weight:600">back-end technologies</span>. 
+          Over time, I’ve explored modern frameworks, <b>responsive design</b> principles, and <b>performance optimization</b> techniques — all of which shaped my passion for creating seamless digital experiences.  
+          Beyond coding, I value <b>clean design</b>, <b>intuitive user interfaces</b>, and the impact that thoughtful development can have on people’s daily lives. 
+          My goal is to craft <span style="color:var(--accent);font-weight:600">solutions that not only work well but also feel delightful to use</span>.
+        </p>
+         </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <p class="lead">Technologies I use frequently.</p>
+      <div class="skills-grid" id="skills-grid">
+        <!-- skill items will be rendered here by JS for animation (also easy to reorder) -->
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="lead">A selection of recent work — click to view live or source.</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="proj">
+          <img class="proj-img" src="institute.png" alt="Project 1 screenshot">
+          <div class="proj-body">
+            <h3>Institute Website</h3>
+            <p>A modern, responsive website designed for an educational institute to showcase courses, about and admissions details.</p>
+            <div class="proj-actions">
+              <a class="link-btn live" href="https://example.com" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj">
+          <img class="proj-img" src="travel.png" alt="E-commerce UI screenshot">
+          <div class="proj-body">
+            <h3>Travel Agency Website</h3>
+            <p>A responsive travel booking website designed with modern UI to showcase destinations and services for travelers.</p>
+            <div class="proj-actions">
+              <a class="link-btn live" href="#" target="_blank" rel="noopener">View</a>
+              <a class="link-btn code" href="https://github.com/Monisha228/travel_agency_web_design" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj">
+          <img class="proj-img" src="ecommerce.png" alt="Canva templates screenshot">
+          <div class="proj-body">
+            <h3>Ecommerce UI</h3>
+            <p>A modern online shopping platform featuring product listings, shopping cart, and secure user authentication.</p>
+            <div class="proj-actions">
+              <a class="link-btn live" href="#" target="_blank" rel="noopener">View</a>
+              <a class="link-btn code" href="https://github.com/Monisha228/ecommerce_project_using_nodejs_expressjs_mongodb" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="proj">
+          <img class="proj-img" src="quizapp.png" alt="Mini app screenshot">
+          <div class="proj-body">
+            <h3>Interactive Quiz App</h3>
+            <p>Built in React/JavaScript.Stores answers, shows results with animations, with admin panel and has a fun UI.</p>
+            <div class="proj-actions">
+              <a class="link-btn live" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p class="lead">Send me a message — I usually reply within a couple of days.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:18px">
+  <div class="card">
+    <form id="contact-form">
+      <div class="form-row">
+        <label>
+          <div>Name</div>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          <div>Email</div>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </label>
+      </div>
+
+      <label>
+        <div>Subject</div>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </label>
+
+      <label>
+        <div>Message</div>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+      </label>
+
+      <div style="display:flex;gap:10px;align-items:center;margin-top:6px">
+        <button class="btn" type="submit">Send Message</button>
+        <button class="btn outline" type="reset">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-bottom:8px">Get in touch</h3>
+    <p style="color:var(--muted)">Email — <a href="mailto:monishamurugesan575@gmail.com">monishamurugesan575@gmail.com</a></p>
+    <p style="color:var(--muted)">Location — India</p>
+    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.05)">
+    <p style="color:var(--muted)">Prefer direct email? Use the form or click the link above.</p>
+  </div>
+</div>
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Monisha • Built with ❤️
+  </footer>
+
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+ <script src="script.js"></script>
+  <!-- Image Modal -->
+
+
+</body>
+</html>
