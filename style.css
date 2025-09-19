@@ -346,6 +346,16 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
 }
+#contact .card p {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;  /* modern browsers */
+}
+
+#contact .card a {
+  word-break: break-all;    /* makes sure long email addresses wrap */
+  display: inline-block;    /* ensures wrapping works properly */
+  max-width: 100%;          /* prevent overflow */
+}
 
 
 /* Make responsive */
@@ -390,4 +400,5 @@ section {
       margin: 0px 0px;
     }
 }
+
 
