@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" type="image/png" href="images (1).png">
 <link rel="stylesheet" href="style.css">
-/* Correct - includes 400, 600, 700 */
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 
   <title>Monisha | Portfolio</title>
   
@@ -157,53 +156,52 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p class="lead">Send me a message — I usually reply within a couple of days.</p>
+    <!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p class="lead">Send me a message — I usually reply within a couple of days.</p>
 
-      <div style="display:grid;grid-template-columns:1fr 420px;gap:18px">
-  <div class="card">
-    <form id="contact-form">
-      <div class="form-row">
+  <div class="contact-grid">
+    <div class="card">
+      <form id="contact-form">
+        <div class="form-row">
+          <label>
+            <div>Name</div>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <div>Email</div>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+
         <label>
-          <div>Name</div>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <div>Subject</div>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
         </label>
+
         <label>
-          <div>Email</div>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <div>Message</div>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
         </label>
-      </div>
 
-      <label>
-        <div>Subject</div>
-        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-      </label>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:6px">
+          <button class="btn" type="submit">Send Message</button>
+          <button class="btn outline" type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
 
-      <label>
-        <div>Message</div>
-        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-      </label>
-
-      <div style="display:flex;gap:10px;align-items:center;margin-top:6px">
-        <button class="btn" type="submit">Send Message</button>
-        <button class="btn outline" type="reset">Clear</button>
-      </div>
-    </form>
+    <div class="card">
+      <h3 style="margin-bottom:8px">Get in touch</h3>
+      <p style="color:var(--muted)">Email — <a href="mailto:monishamurugesan575@gmail.com">monishamurugesan575@gmail.com</a></p>
+      <p style="color:var(--muted)">Location — India</p>
+      <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.05)">
+      <p style="color:var(--muted)">Prefer direct email? Use the form or click the link above.</p>
+    </div>
   </div>
+</section>
 
-  <div class="card">
-    <h3 style="margin-bottom:8px">Get in touch</h3>
-    <p style="color:var(--muted)">Email — <a href="mailto:monishamurugesan575@gmail.com">monishamurugesan575@gmail.com</a></p>
-    <p style="color:var(--muted)">Location — India</p>
-    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.05)">
-    <p style="color:var(--muted)">Prefer direct email? Use the form or click the link above.</p>
-  </div>
-</div>
-
-
-
-    </section>
   </main>
 
   <footer>
@@ -221,4 +219,3 @@
 
 </body>
 </html>
-
