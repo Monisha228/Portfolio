@@ -401,4 +401,12 @@ section {
     }
 }
 
+@media (max-width: 480px) {
+  #contact .card a {
+    display: block;   /* email moves to its own line */
+    margin-top: 4px;
+    font-size: 0.95rem;
+  }
+}
+
 
