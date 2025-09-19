@@ -276,11 +276,13 @@ section {
   #contact > div {
     grid-template-columns: 1fr; /* stack on mobile */
   }
+  
          .btn{
         font-size:14px;
        }
     .btn.outline{
       font-size:14px;}
+
 }
 .proj-img { aspect-ratio:16/9; object-fit:cover; }
 .container {
@@ -372,4 +374,25 @@ section {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
+  .hero{
+    padding:40px 0px !important;
+  }
+   section{padding:40px 0}
+   #about
+    {
+      margin:0px 0px;
+    }
+    #skills
+    {
+      margin:0px 0px;
+    }
+    #projects
+{
+  margin: 0px 0px;
 }
+#contact
+    {
+      margin: 0px 0px;
+    }
+}
+
