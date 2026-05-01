@@ -60,7 +60,9 @@ skills.forEach(s => {
   }, 150);
 });
 
-// Modal (FINAL WORKING)
+// =====================
+// ✅ MODAL (WORKING)
+// =====================
 const modal = document.getElementById("imgModal");
 const modalImg = document.getElementById("modalImg");
 const captionText = document.getElementById("caption");
@@ -84,13 +86,16 @@ closeBtn.onclick = () => {
   modal.style.display = "none";
 };
 
+// Close when clicking outside
 modal.onclick = (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
   }
 };
 
+// =====================
 // Gmail form submit
+// =====================
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
 
