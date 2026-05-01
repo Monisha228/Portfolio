@@ -137,29 +137,7 @@ mobileMenu.querySelectorAll('a').forEach(link => {
       form.reset();
       status.textContent = '';
     });
-// Modal logic
-const modal = document.getElementById("imgModal");
-const modalImg = document.getElementById("modalImg");
-const caption = document.getElementById("caption");
-const closeBtn = document.querySelector(".close");
 
-// Attach event for each project "View" button
-document.querySelectorAll(".proj .live").forEach((btn, index) => {
-  btn.addEventListener("click", (e) => {
-    e.preventDefault(); // stop link
-    const proj = btn.closest(".proj");
-    const img = proj.querySelector(".proj-img");
-    modal.style.display = "block";
-    modalImg.src = img.src;
-    caption.textContent = proj.querySelector("h3").textContent;
-  });
-});
-
-// Close modal
-closeBtn.onclick = () => { modal.style.display = "none"; };
-modal.onclick = (e) => {
-  if (e.target === modal) modal.style.display = "none";
-};
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
 
