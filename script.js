@@ -172,9 +172,33 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
   window.open(gmailUrl, "_blank");
 });
-    /**********************
-     Notes:
-     - Replace placeholder images (via.placeholder.com) with your screenshots.
-     - Update project links to point to real 'Live' and 'Code' URLs.
-     - If you want the site to remember theme across visits, I can add localStorage next.
-     **********************/
+   const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const captionText = document.getElementById("caption");
+const closeBtn = document.querySelector(".close");
+
+const viewButtons = document.querySelectorAll(".view-btn");
+
+viewButtons.forEach(btn => {
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const imgSrc = this.getAttribute("data-img");
+
+    modal.style.display = "block";
+    modalImg.src = imgSrc;
+    captionText.innerText = "Project Preview";
+  });
+});
+
+// Close modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+};
+
+// Close when clicking outside image
+modal.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
