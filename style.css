@@ -49,6 +49,13 @@
   width: 100%;   /* ✅ add this */
   box-sizing: border-box;
 }
+ .container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px;
+  width: 100%;   /* ✅ add this */
+  box-sizing: border-box;
+}
 
     /* Header */
     /* Header: always visible at very top */
