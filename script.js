@@ -41,7 +41,6 @@ const skills = [
   {name:'MySQL', level:74},
   {name:'Node.js', level:68},
   {name:'MongoDB', level:65},
-  {name:'Python', level:65}
 ];
 
 const skillsGrid = document.getElementById('skills-grid');
